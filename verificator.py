@@ -14,6 +14,6 @@ with open('output.json') as fout:
 
 if a ** s % N == b:
     print(f'{a} ** {s} = {b} (mod {N})')
-    print('Program is OK')
+    print('PVerification result: PASS')
 else:
-    print('Program is NOT OK')
+    print('Verification result: FAIL')

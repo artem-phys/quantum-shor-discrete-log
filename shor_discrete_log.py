@@ -81,6 +81,7 @@ def shor_discrete_log(a, b, N):
     qc.append(inverse_QFT_gate, range(eval_qubits))
     qc.append(inverse_QFT_gate, range(eval_qubits, 2 * eval_qubits))
 
+    print(qc)
     # Measure circuit
     qc.measure(range(eval_qubits * 2), range(eval_qubits * 2))
 
